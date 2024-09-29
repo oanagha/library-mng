@@ -29,6 +29,10 @@ function Add() {
         else {
             console.log(book);
             dispatch(addBook(book))
+            SetBook({
+                title: '', author: '', genre: '', language: '', imageUrl: ''
+
+            })
             handleClose()
             toast.success("Book added succesfully!")
 
