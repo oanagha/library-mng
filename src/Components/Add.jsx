@@ -18,12 +18,12 @@ function Add() {
 
 
     const [book, SetBook] = useState({
-         title: '', author: '', genre: '', language: '', imageUrl: ''
+        title: '', author: '', genre: '', language: '', imageUrl: ''
     })
 
     const handleDispatch = () => {
-        const {  title, author, language, imageUrl, } = book
-        if ( !title || !author || !language || !imageUrl) {
+        const { title, author, language, imageUrl, } = book
+        if (!title || !author || !language || !imageUrl) {
             alert("enter valid inputs")
         }
         else {
@@ -36,7 +36,7 @@ function Add() {
             handleClose()
             toast.success("Book added succesfully!")
 
-        } 
+        }
 
     }
     return (
@@ -57,7 +57,7 @@ function Add() {
                 </Modal.Header>
                 <Modal.Body>
 
-                   
+
 
 
                     <FloatingLabel controlId="floatingInput" label="Title" className='mb-3 text-dark'>
